@@ -1,11 +1,24 @@
 {
   "courses": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Angular 13 Fundamentals",
       "description": "Learn the fundamentals of Angular 13",
       "percentComplete": 26,
       "favorite": true
+    },
+    {
+      "id": "nif820v",
+      "title": "New Test Course",
+      "description": "Just a simple test",
+      "percentComplete": 14,
+      "favorite": false
+    }
+  ],
+  "lessons": [
+    {
+      "id": "1",
+      "title": "Component Driven Architecture"
     }
   ]
 }
