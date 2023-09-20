@@ -7,12 +7,12 @@ const emptyCourse: Course = {
   description: '',
   percentComplete: 0,
   favorite: false,
-}
+};
 
 @Component({
   selector: 'app-courses',
   templateUrl: './courses.component.html',
-  styleUrls: ['./courses.component.scss']
+  styleUrls: ['./courses.component.scss'],
 })
 export class CoursesComponent implements OnInit {
   // 1. Render courses in a list
@@ -25,26 +25,25 @@ export class CoursesComponent implements OnInit {
       title: 'Angular 13 Fundamentals',
       description: 'Learn the fundamentals of Angular 13',
       percentComplete: 12,
-      favorite: true
+      favorite: true,
     },
     {
       id: 2,
-      title: 'JavaScript The HARDEST PARTS EVER!',
-      description: 'Learn the JavaScript like a pro! with Will',
-      percentComplete: 98,
-      favorite: true
-    }
+      title: 'Java Fundamentals',
+      description: 'Learn the fundamentals of Java',
+      percentComplete: 100,
+      favorite: true,
+    },
   ];
   selectedCourse = emptyCourse;
   originalTitle = '';
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   selectCourse(course) {
-    this.selectedCourse = {...course};
+    this.selectedCourse = { ...course };
     this.originalTitle = course.title;
   }
 
@@ -57,6 +56,6 @@ export class CoursesComponent implements OnInit {
   }
 
   reset() {
-    this.selectCourse({...emptyCourse});
+    this.selectCourse({ ...emptyCourse });
   }
 }
